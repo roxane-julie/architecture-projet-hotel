@@ -1,0 +1,386 @@
+{
+	"info": {
+		"_postman_id": "1fa82d17-feaf-4719-8f08-cb2376d1561d",
+		"name": "hotel management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9515451"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "auth customer",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test('Response status code is 200', function () {\r",
+									"    pm.expect(pm.response.code).to.equal(200);\r",
+									"})\r",
+									"\r",
+									"pm.test('Should return response content', function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData).to.exist.and.not.to.be.empty;\r",
+									"    pm.expect(responseData).to.have.property(\"token\");\r",
+									"    pm.collectionVariables.set(\"jwt\", responseData.token);\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"customer.hotel@test.com\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}auth/login",
+							"host": [
+								"{{url}}auth"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth Receptionist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test('Response status code is 200', function () {\r",
+									"    pm.expect(pm.response.code).to.equal(200);\r",
+									"})\r",
+									"\r",
+									"pm.test('Should return response content', function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData).to.exist.and.not.to.be.empty;\r",
+									"    pm.expect(responseData).to.have.property(\"token\");\r",
+									"    pm.collectionVariables.set(\"jwt\", responseData.token);\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"Receptionist.hotel@test.com\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}auth/login",
+							"host": [
+								"{{url}}auth"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "auth Cleaning Staff",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test('Response status code is 200', function () {\r",
+									"    pm.expect(pm.response.code).to.equal(200);\r",
+									"})\r",
+									"\r",
+									"pm.test('Should return response content', function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData).to.exist.and.not.to.be.empty;\r",
+									"    pm.expect(responseData).to.have.property(\"token\");\r",
+									"    pm.collectionVariables.set(\"jwt\", responseData.token);\r",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"Receptionist.hotel@test.com\",\r\n  \"password\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}auth/login",
+							"host": [
+								"{{url}}auth"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "booking",
+			"item": [
+				{
+					"name": "payment",
+					"item": [
+						{
+							"name": "by stripe",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cardNumber\": \"454645646\",\r\n  \"expiryDate\": \"string\",\r\n  \"amount\": \"string\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}payment/37f031cc-bcc1-4b53-a51a-85f98f6e8609/stripe",
+									"host": [
+										"{{url}}payment"
+									],
+									"path": [
+										"37f031cc-bcc1-4b53-a51a-85f98f6e8609",
+										"stripe"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "by paypal",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"cardNumber\": \"454645646\",\r\n  \"expiryDate\": \"string\",\r\n  \"amount\": \"string\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}payment/37f031cc-bcc1-4b53-a51a-85f98f6e8609/paypal",
+									"host": [
+										"{{url}}payment"
+									],
+									"path": [
+										"37f031cc-bcc1-4b53-a51a-85f98f6e8609",
+										"paypal"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create booking",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"roomId\": \"2950f72e-c2ca-4a55-9f01-ab04db041ba5\",\r\n  \"from\": \"2025-06-13\",\r\n  \"to\": \"2025-06-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}booking/2950f72e-c2ca-4a55-9f01-ab04db041ba5",
+							"host": [
+								"{{url}}booking"
+							],
+							"path": [
+								"2950f72e-c2ca-4a55-9f01-ab04db041ba5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cancel",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"roomId\": \"2950f72e-c2ca-4a55-9f01-ab04db041ba5\",\r\n  \"from\": \"2025-06-13\",\r\n  \"to\": \"2025-06-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}booking/4bd6501e-3ddb-44e2-b1ec-cb24601603bd/cancel",
+							"host": [
+								"{{url}}booking"
+							],
+							"path": [
+								"4bd6501e-3ddb-44e2-b1ec-cb24601603bd",
+								"cancel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rooms",
+			"item": [
+				{
+					"name": "Get availablerooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}rooms/available-rooms?From=2025-06-11&To=2025-06-12",
+							"host": [
+								"{{url}}rooms"
+							],
+							"path": [
+								"available-rooms"
+							],
+							"query": [
+								{
+									"key": "From",
+									"value": "2025-06-11"
+								},
+								{
+									"key": "To",
+									"value": "2025-06-12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get rooms to clean",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}rooms/staff/need-clean",
+							"host": [
+								"{{url}}rooms"
+							],
+							"path": [
+								"staff",
+								"need-clean"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update cleaned room",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}rooms/staff/cleaned/d464d174-1b4b-4dc0-8917-b5ff5003a51e",
+							"host": [
+								"{{url}}rooms"
+							],
+							"path": [
+								"staff",
+								"cleaned",
+								"d464d174-1b4b-4dc0-8917-b5ff5003a51e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{jwt}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "jwt",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "url",
+			"value": "https://localhost:7080/api/v1/",
+			"type": "string"
+		}
+	]
+}

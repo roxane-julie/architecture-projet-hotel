@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelManagement.Api.UI", "HotelManagement.Api.UI\HotelManagement.Api.UI.csproj", "{81D824ED-4186-45E9-9B55-310B41B6BA72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelManagement.Application", "HotelManagement.Application\HotelManagement.Application.csproj", "{9365E20F-C2A8-4AF4-933F-3D7936F4C4B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelManagement.Domain", "HotelManagement.Domain\HotelManagement.Domain.csproj", "{38443655-3C60-4397-A9D1-07008F845E17}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelManagement.Infrastructure", "HotelManagement.Infrastructure\HotelManagement.Infrastructure.csproj", "{B3E8F66A-387F-43FA-8501-79C370F46374}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{B4F69B21-A764-4444-9E37-0C5A167CAAF2}"
+	ProjectSection(SolutionItems) = preProject
+		documentation.pdf = documentation.pdf
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "archi-decision-record", "archi-decision-record", "{70B460AC-55EA-42B3-871D-FFBD41D75269}"
+	ProjectSection(SolutionItems) = preProject
+		ADR\20250611_factoryPattern.md = ADR\20250611_factoryPattern.md
+		ADR\20250611_repositoryPattern.md = ADR\20250611_repositoryPattern.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{81D824ED-4186-45E9-9B55-310B41B6BA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81D824ED-4186-45E9-9B55-310B41B6BA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81D824ED-4186-45E9-9B55-310B41B6BA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81D824ED-4186-45E9-9B55-310B41B6BA72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9365E20F-C2A8-4AF4-933F-3D7936F4C4B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9365E20F-C2A8-4AF4-933F-3D7936F4C4B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9365E20F-C2A8-4AF4-933F-3D7936F4C4B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9365E20F-C2A8-4AF4-933F-3D7936F4C4B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38443655-3C60-4397-A9D1-07008F845E17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38443655-3C60-4397-A9D1-07008F845E17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38443655-3C60-4397-A9D1-07008F845E17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38443655-3C60-4397-A9D1-07008F845E17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E8F66A-387F-43FA-8501-79C370F46374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E8F66A-387F-43FA-8501-79C370F46374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E8F66A-387F-43FA-8501-79C370F46374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E8F66A-387F-43FA-8501-79C370F46374}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70B460AC-55EA-42B3-871D-FFBD41D75269} = {B4F69B21-A764-4444-9E37-0C5A167CAAF2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E094634D-81A5-4B15-907B-7A732BA0238D}
+	EndGlobalSection
+EndGlobal

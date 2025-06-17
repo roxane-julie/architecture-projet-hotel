@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "96b3eb50-b93e-42d1-85d1-5397ba3dec60",
+    "EmailAddress": "customer.hotel@test.com",
+    "HashedPassword": "AQAAAAIAAYagAAAAEOjTH6FMy6vnmzvdsSPSaIHHpiJjm0hgIa8wO9TZROPInroz3dUJ0kmDG54qMnKNzA==",
+    "FirstName": "string",
+    "LastName": "string",
+    "Role": 0
+  },
+  {
+    "Id": "dff8707e-fb9e-4cf9-8f88-0c1c96ea3c46",
+    "EmailAddress": "CleaningStaff.hotel@test.com",
+    "HashedPassword": "AQAAAAIAAYagAAAAENApafy7IeRUyhD7NJ/FfEk\u002BXYFaymuXmeldcYbHJvLlsXtmL\u002BF4ljGPI8cCQG2eBw==",
+    "FirstName": "string",
+    "LastName": "string",
+    "Role": 2
+  },
+  {
+    "Id": "72e3e5a8-f00d-4aac-ad96-547f4a324c07",
+    "EmailAddress": "Receptionist.hotel@test.com",
+    "HashedPassword": "AQAAAAIAAYagAAAAEKaC98JTwPCOLTfYXMgDorLlMnXPjXoR/7Q2cjjzabgeJS\u002BY6HGgPudaLfe8vGZQHg==",
+    "FirstName": "string",
+    "LastName": "string",
+    "Role": 1
+  }
+]

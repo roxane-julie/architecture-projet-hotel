@@ -1,0 +1,57 @@
+[
+  {
+    "Id": "2950f72e-c2ca-4a55-9f01-ab04db041ba5",
+    "Name": "Simple 1",
+    "Person": 2,
+    "Type": "simpleType",
+    "IsCleaned": true,
+    "LastCleanedDate": "2025-06-12T00:00:00",
+    "CleanedBy": "dff8707e-fb9e-4cf9-8f88-0c1c96ea3c46",
+    "Price": 5,
+    "State": "New"
+  },
+  {
+    "Id": "45076aa6-2bff-429a-b45f-6847ed5ec77b",
+    "Name": "Double 1",
+    "Person": 4,
+    "Type": "doubleType",
+    "IsCleaned": true,
+    "LastCleanedDate": "2025-06-12T00:00:00",
+    "CleanedBy": "dff8707e-fb9e-4cf9-8f88-0c1c96ea3c46",
+    "Price": 10,
+    "State": "New"
+  },
+  {
+    "Id": "b5c98e1b-3fa1-4f3f-a2e5-9b599a88b496",
+    "Name": "Double 2",
+    "Person": 4,
+    "Type": "doubleType",
+    "IsCleaned": true,
+    "LastCleanedDate": "2025-06-12T00:00:00",
+    "CleanedBy": "dff8707e-fb9e-4cf9-8f88-0c1c96ea3c46",
+    "Price": 10,
+    "State": "New"
+  },
+  {
+    "Id": "9a61f004-3bf9-4a27-bed4-cab58e6cd124",
+    "Name": "Suite 1",
+    "Person": 4,
+    "Type": "suiteType",
+    "IsCleaned": true,
+    "LastCleanedDate": "2025-06-12T00:00:00",
+    "CleanedBy": "dff8707e-fb9e-4cf9-8f88-0c1c96ea3c46",
+    "Price": 30,
+    "State": "New"
+  },
+  {
+    "Id": "d464d174-1b4b-4dc0-8917-b5ff5003a51e",
+    "Name": "Suite 2",
+    "Person": 2,
+    "Type": "suiteType",
+    "IsCleaned": true,
+    "LastCleanedDate": "2025-06-11T13:19:06.5276877Z",
+    "CleanedBy": "dff8707e-fb9e-4cf9-8f88-0c1c96ea3c46",
+    "Price": 20,
+    "State": "New"
+  }
+]

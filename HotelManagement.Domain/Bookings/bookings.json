@@ -1,0 +1,28 @@
+[
+  {
+    "Id": "ebb693e3-5071-4370-95ba-c9cb4394af96",
+    "CustomerId": "45076aa6-2bff-429a-b45f-6847ed5ec77b",
+    "RoomId": "45076aa6-2bff-429a-b45f-6847ed5ec77b",
+    "From": "2025-06-10T00:00:00",
+    "To": "2025-06-11T00:00:00",
+    "Price": 20,
+    "Payed": true,
+    "CreatedOn": "2025-06-05",
+    "Iscancel": false,
+    "HasCome": true,
+    "HasLeave" :  true
+  },
+  {
+    "Id": "37f031cc-bcc1-4b53-a51a-85f98f6e8609",
+    "CustomerId": "96b3eb50-b93e-42d1-85d1-5397ba3dec60",
+    "RoomId": "2950f72e-c2ca-4a55-9f01-ab04db041ba5",
+    "From": "2025-06-13T00:00:00",
+    "To": "2025-06-15T00:00:00",
+    "Price": 10,
+    "Payed": false,
+    "CreatedOn": "2025-06-10",
+    "Iscancel": false,
+    "HasCome": false,
+    "HasLeave": false
+  }
+]
